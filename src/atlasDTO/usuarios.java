@@ -2,6 +2,7 @@
 package atlasDTO;
 
 import java.util.Date;
+import java.util.regex.Pattern;
 
 public class usuarios 
 {
@@ -84,7 +85,12 @@ public class usuarios
     }
 
     public void setTelefono(int telefono) {
-        this.telefono = telefono;
+        StringBuilder sb = new StringBuilder();
+        sb.append(telefono);
+        
+        if(sb.length() >= 8){
+            this.telefono = telefono;
+        }
     }
 
     public String getEmail() {
@@ -92,8 +98,9 @@ public class usuarios
     }
 
     public void setEmail(String email) {
-        if(email.length()>5 &&email.contains("@")){
-        if(email.length()>5 &&email.contains(".com"))
+        if(email.contains("@")){
+        if(email.contains(".cl")|| email.contains(".com"))
+        
         this.email = email;
         }
     }
@@ -103,15 +110,21 @@ public class usuarios
     }
 
     public void setNombre_usuario(String nombre_usuario) {
+        if(nombre_usuario.length()>=4)
         this.nombre_usuario = nombre_usuario;
     }
+
+    private static final String PASSWORD_REGEX = "^(?=.[0-9])(?=.[a-z])(?=.*[A-Z]).{6,}$";
+    private static final Pattern PASSWORD_PATTERN = Pattern.compile(PASSWORD_REGEX);
 
     public String getContraseña() {
         return contraseña;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContraseña(String Contraseña) {
+        if (PASSWORD_PATTERN.matcher(Contraseña).matches()) {
+            this.contraseña = Contraseña;
+        }
     }
 
     
