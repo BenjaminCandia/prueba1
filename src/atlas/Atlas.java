@@ -52,8 +52,20 @@ public class Atlas {
         
         System.out.println("=============================");
         
+        suscripcion s = new suscripcion();
+        s.setAbono_total(15000);
+        s.setClub(cd);
+        s.setFecha_inicio("29/06/2003");
+        s.setNumero(1010);
+        s.setUsuario(u);
+        s.setValor_sub(10000);
         
-        
+        System.out.println("NUMERO: "+s.getNumero()); 
+        System.out.println("USUARIO: "+s.getUsuario());
+        System.out.println("CLUB: "+s.getClub());
+        System.out.println("VALOR DE SUSCRIPCION: "+s.getValor_sub());
+        System.out.println("ABONO TOTAL: "+s.getAbono_total());
+        System.out.println("FECHA INICIO DE LA SUSCRIPCION: "+s.getFecha_inicio());
         
         
         
