@@ -69,7 +69,7 @@ public class Atlas {
         System.out.println("ABONO TOTAL: "+s.getAbono_total());
         System.out.println("FECHA INICIO DE LA SUSCRIPCION: "+s.getFecha_inicio());
         System.out.println("============================");
-               
+        System.out.println("===========================");       
     }
     
 }
