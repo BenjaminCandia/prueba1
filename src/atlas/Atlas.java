@@ -4,20 +4,22 @@ package atlas;
 import atlasDTO.club_deportivo;
 import atlasDTO.suscripcion;
 import atlasDTO.usuarios;
+import java.util.Date;
 
 public class Atlas {
 
     public static void main(String[] args) {
         usuarios u = new usuarios();
-        u.setId(0);
-        u.setRut(0);
-        u.setDv();
-        u.setNombre_completo(nombre_completo);
-        u.setNombre_usuario(nombre_usuario);
-        u.setContraseña(contraseña);
-        u.setEmail(email);
-        u.setFecha(fecha);
+        u.setId(1010);
+        u.setRut(12345678);
+        u.setDv("");
+        u.setNombre_completo("");
+        u.setNombre_usuario("");
+        u.setContraseña("");
+        u.setEmail("");
+        u.setFecha(new Date());
         u.setTelefono(0);
+        
                
     }
     
