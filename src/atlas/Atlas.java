@@ -22,6 +22,8 @@ public class Atlas {
         u.setFecha_nac("29/06/2003");
         u.setTelefono(923456789);
         
+        System.out.println("=========================");
+        
         System.out.println("ID: "+u.getId());
         System.out.println("RUT: "+u.getRut()+"-"+u.getDv());
         System.out.println("NOMBRE COMPLETO: "+u.getNombre_completo());
@@ -69,7 +71,7 @@ public class Atlas {
         System.out.println("ABONO TOTAL: "+s.getAbono_total());
         System.out.println("FECHA INICIO DE LA SUSCRIPCION: "+s.getFecha_inicio());
         System.out.println("============================");
-        
+               
     }
     
 }
