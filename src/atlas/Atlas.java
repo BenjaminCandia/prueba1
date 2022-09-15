@@ -16,7 +16,7 @@ public class Atlas {
         u.setNombre_completo("benjamin alberto candia toro");
         u.setNombre_usuario("bencant");
         u.setContraseña("loquillo123");
-        u.setEmail("bencant@duoc.cl");
+        u.setEmail("benjita@duocuc.com");
         u.setFecha_nac("29/06/2003");
         u.setTelefono(987651234);
         
@@ -66,11 +66,7 @@ public class Atlas {
         System.out.println("VALOR DE SUSCRIPCION: "+s.getValor_sub());
         System.out.println("ABONO TOTAL: "+s.getAbono_total());
         System.out.println("FECHA INICIO DE LA SUSCRIPCION: "+s.getFecha_inicio());
-        
-        
-        
-        
-        
+  
     }
     
 }

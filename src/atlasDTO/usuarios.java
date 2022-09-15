@@ -92,7 +92,10 @@ public class usuarios
     }
 
     public void setEmail(String email) {
+        if(email.length()>5 &&email.contains("@")){
+        if(email.length()>5 &&email.contains(".com"))
         this.email = email;
+        }
     }
 
     public String getNombre_usuario() {

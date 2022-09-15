@@ -77,10 +77,5 @@ public class suscripcion
     public void setClub(club_deportivo club) {
         this.club = club;
     }
-
-
-
-    
-            
-        
+                 
 }
