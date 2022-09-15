@@ -8,7 +8,7 @@ public class club_deportivo
     private int codigo;
     private String nombre_club;
     private String nombre_fundador;
-    private Date fecha;
+    private String fecha_origen;
     private String pais_origen;
     private String lema;
     private String colores; 
@@ -18,18 +18,18 @@ public class club_deportivo
         this.codigo = 0;
         this.nombre_club = "";
         this.nombre_fundador = "";
-        this.fecha = new Date();
+        this.fecha_origen = "";
         this.pais_origen = "";
         this.lema = "";
         this.colores = "";
         this.valor_sub = 0;
     }
 
-    public club_deportivo(int codigo, String nombre_club, String nombre_fundador, Date fecha, String pais_origen, String lema, String colores, int valor_sub) {
+    public club_deportivo(int codigo, String nombre_club, String nombre_fundador, String fecha_origen, String pais_origen, String lema, String colores, int valor_sub) {
         this.codigo = codigo;
         this.nombre_club = nombre_club;
         this.nombre_fundador = nombre_fundador;
-        this.fecha = fecha;
+        this.fecha_origen = fecha_origen;
         this.pais_origen = pais_origen;
         this.lema = lema;
         this.colores = colores;
@@ -60,12 +60,12 @@ public class club_deportivo
         this.nombre_fundador = nombre_fundador;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public String getFecha_origen() {
+        return fecha_origen;
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    public void setFecha_origen(String fecha_origen) {
+        this.fecha_origen = fecha_origen;
     }
 
     public String getPais_origen() {
@@ -99,10 +99,5 @@ public class club_deportivo
     public void setValor_sub(int valor_sub) {
         this.valor_sub = valor_sub;
     }
-    
-    
-            
-            
-            
-            
-}
+
+}    
