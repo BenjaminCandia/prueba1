@@ -4,8 +4,6 @@ package atlas;
 import atlasDTO.club_deportivo;
 import atlasDTO.suscripcion;
 import atlasDTO.usuarios;
-import java.util.Date;
-
 
 public class Atlas {
 
